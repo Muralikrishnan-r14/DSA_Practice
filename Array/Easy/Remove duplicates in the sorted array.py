@@ -6,6 +6,6 @@ def remdup(arr):
             arr[j]=arr[i]
             j+=1
 
-    return arr
+    return arr[:j]
 arr=[1,1,1,2,2,3,3,3,3,4,4]
 print(remdup(arr))
