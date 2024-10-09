@@ -11,6 +11,7 @@ def is_isomorphic(s: str, t: str) -> bool:
 
     for c1, c2 in zip(s, t):
         if c1 in s_to_t_mapping:
+            print(s_to_t_mapping[c1])
             if s_to_t_mapping[c1] != c2:
                 return False
         else:
@@ -25,8 +26,8 @@ def is_isomorphic(s: str, t: str) -> bool:
     return True
 
 # Example usage:
-s1 = "egg"
-s2 = "ahh"
+s1 = "adi"
+s2 = "egg"
 print(is_isomorphic(s1, s2))  # Output: True
 
 s1 = "foo"
